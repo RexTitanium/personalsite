@@ -282,3 +282,89 @@ html.is-animating.transition-fade {
 .card3 a {
   text-decoration: none;
 }
+
+
+
+@media screen and (max-width: 800px) {
+  .body {
+    background-size: cover;
+  }
+  .homeul li a {
+    font-size: 10px;
+  }
+  .title {
+    font-size: 6vh;
+  }
+  .container1 {
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+    width: 80%;
+    height: 2000px;
+    display: grid;
+    grid-column-gap: 20px;
+  }
+  .cards {
+    width: 80%;
+  }
+  .footerall {
+    bottom: 0;
+    position: relative;
+  }
+  .container-footer {
+    display: flex;
+    flex-direction: row;
+    padding-left: 1vh;
+    list-style: none;
+  }
+
+  .logo h1 {
+    font-family: Azonix;
+    font-size: 1vh;
+    padding-top: 2vh;
+  }
+
+  .footer-sm {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: left;
+  }
+  .insta-logo,
+  .facebook-logo,
+  .twitter-logo,
+  .linkedin-logo {
+    width: 11px;
+    margin: 5px;
+  }
+
+  .codes-used {
+    margin-left: 40px;
+    padding-top: 2vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .codes-used h1 {
+    font-family: Azonix;
+    font-size: 1vh;
+  }
+  .footer-codes li {
+    font-family: Consolas;
+    font-size: 0.7vh;
+    width: 100%;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: left;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .homeul li a {
+    font-size: 10px;
+  }
+  .title {
+    font-size: 3vh;
+  }
+}
