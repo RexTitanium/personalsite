@@ -360,7 +360,7 @@ html.is-animating.transition-fade {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1920px) {
   .homeul li a {
     font-size: 10px;
   }
