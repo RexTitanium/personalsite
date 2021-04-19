@@ -29,6 +29,7 @@ nav {
 .homeul li a {
   font-size: larger;
   font-family: Azonix;
+  src: "../Fonts/Azonix.otf";
   text-decoration: none;
   margin: 10px;
   padding: 10px 5px;
