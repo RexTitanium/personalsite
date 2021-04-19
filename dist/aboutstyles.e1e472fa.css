@@ -1,0 +1,165 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.aboutme {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+}
+.image-card {
+  cursor: pointer;
+  background-color: black;
+  box-shadow: 0px 5px 10px black;
+  box-sizing: border-box;
+  border-radius: 15px;
+  margin: 20px;
+  display: inline-block;
+  align-items: center;
+}
+
+.photo {
+  animation: zoom-out 2s ease;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.info {
+  font-family: Consolas;
+  font-size: larger;
+  color: white;
+  padding: 20px 0px;
+}
+.info h1 {
+  border-bottom: 2px solid white;
+}
+
+.info p {
+  padding-right: 20px;
+  text-align: left;
+  animation: slide-left 2s ease;
+}
+
+.Curriculum-vitae h1 {
+  opacity: 70%;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 100px;
+  font-family: Azonix;
+  color: bisque;
+  border-bottom: 10px solid bisque;
+}
+
+.mystory h1 {
+  font-family: Consolas;
+  font-size: 50px;
+  color: white;
+  padding: 0px 20px;
+  border-bottom: 2px solid white;
+}
+.mystory p {
+  font-family: Consolas;
+  font-size: 20px;
+  color: white;
+  padding: 20px 20px;
+}
+
+.Curriculum-vitae {
+  align-items: center;
+}
+
+.cv-name {
+  margin-top: 30px;
+  padding: 50px 50px;
+}
+
+.cv-name h2 {
+  font-size: 60px;
+  font-family: adam;
+  color: white;
+  text-align: left;
+}
+
+.headline {
+  margin-top: 20px;
+  color: white;
+  font-family: Overpass;
+  list-style: none;
+  font-size: 30px;
+}
+.headline li a {
+  font-family: Overpass;
+  color: white;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.education,
+.key-acad,
+.skills,
+.additional-info {
+  margin-top: 50px;
+  font-family: Overpass;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.ed-timeline li ul,
+.keyacad-timeline li ul,
+.skills-tl li ul,
+.addinfo-tl li ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+.skills-tl {
+  list-style-type: none;
+}
+.ed-timeline li,
+.keyacad-timeline li,
+.skills-tl li,
+.addinfo-tl li {
+  margin-top: 10px;
+}
+
+.rest {
+  margin-left: 120px;
+}
+
+.rest2 {
+  margin-left: 310px;
+}
+
+.rest1 {
+  margin-left: 0px;
+}
+
+.rest i {
+  color: gray;
+}
+@keyframes slide-left {
+  from {
+    opacity: 0;
+    transform: translateX(-1%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes zoom-out {
+  from {
+    width: 120%;
+    opacity: 0.5;
+  }
+  to {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+
+/*# sourceMappingURL=/aboutstyles.e1e472fa.css.map */

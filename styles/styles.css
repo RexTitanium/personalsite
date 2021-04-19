@@ -1,0 +1,285 @@
+@import "./contactstyles.css";
+@import "./aboutstyles.css";
+@import "./workstyles.css";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  background-color: #151515;
+  box-sizing: border-box;
+  height: 15vh;
+  box-shadow: 0px 10px 10px #070707;
+}
+
+.homeul {
+  text-align: center;
+  list-style-type: none;
+}
+.homeul li {
+  margin-top: 40px;
+  display: inline-block;
+}
+.homeul li a {
+  font-size: larger;
+  font-family: Azonix;
+  text-decoration: none;
+  margin: 10px;
+  padding: 10px 5px;
+  color: white;
+  border: none;
+  transition: 0.5s ease;
+  text-shadow: 0px 3px 5px #010101;
+}
+.homeul li a:hover {
+  color: blanchedalmond;
+  transition: 0.1s ease;
+  border-bottom: 3px solid blanchedalmond;
+}
+.homeul li a.active {
+  color: #99a4ff;
+  border-bottom: 3px solid #99a4ff;
+}
+body {
+  background: url("../Images/blackGrad.jpg.png");
+  background-size: cover;
+}
+.container {
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+.title {
+  font-family: Azonix;
+  color: white;
+  text-shadow: 0px 5px 10px #000000;
+  font-size: 10vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: all 0.5s ease;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+}
+.title:hover {
+  font-size: 70px;
+  transition: all 0.2s ease;
+}
+.container img {
+  width: 100%;
+  background: url("../Images/midimg.png");
+  opacity: 50%;
+  display: flex;
+}
+
+.container1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 10px;
+  height: 700px;
+}
+
+.cards {
+  cursor: po;
+  animation: slide-in 0.5s ease forwards;
+  background-color: black;
+  box-shadow: 0px 5px 10px black;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin: 20px;
+  width: 20%;
+  height: fit-content;
+}
+.image img {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  width: 100%;
+}
+
+.card1 h1 {
+  margin-top: 5px;
+  font-size: x-large;
+  text-align: center;
+  font-family: Adam;
+  color: white;
+}
+.card1 h3 {
+  text-align: center;
+  margin: 5px;
+  padding: 5px 5px;
+  font-size: medium;
+  font-family: Consolas;
+  color: white;
+}
+
+.card1:hover {
+  transition: all 0.3s ease;
+  transform: translateY(-20px);
+}
+
+/*card2*/
+.card2 h1 {
+  margin-top: 5px;
+  font-size: x-large;
+  text-align: center;
+  font-family: Adam;
+  color: white;
+}
+.card2 h3 {
+  text-align: center;
+  margin: 5px;
+  padding: 5px 5px;
+  font-size: medium;
+  font-family: Consolas;
+  color: white;
+}
+
+.card2:hover {
+  transition: all 0.3s ease;
+  transform: translateY(-20px);
+}
+
+/*card3*/
+.card3 h1 {
+  margin-top: 5px;
+  font-size: x-large;
+  text-align: center;
+  font-family: Adam;
+  color: white;
+}
+.card3 h3 {
+  text-align: center;
+  margin: 5px;
+  padding: 5px 5px;
+  font-size: medium;
+  font-family: Consolas;
+  color: white;
+}
+
+.card3:hover {
+  transition: all 0.3s ease;
+  transform: translateY(-20px);
+}
+
+.image img:hover {
+  transition: all 0.6s ease;
+  transform: translateY(-10px);
+}
+
+.footerall {
+  background-color: black;
+  color: white;
+  box-shadow: -5px 0px 10px #000000;
+  bottom: 0;
+  width: 100%;
+  position: relative;
+}
+.container-footer {
+  display: flex;
+  flex-direction: row;
+  padding-left: 5vh;
+  list-style: none;
+}
+
+.logo h1 {
+  font-family: Azonix;
+  font-size: 3vh;
+  padding-top: 5vh;
+}
+
+.footer-sm {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: left;
+}
+.insta-logo,
+.facebook-logo,
+.twitter-logo,
+.linkedin-logo {
+  width: 22px;
+  margin: 10px;
+}
+
+.codes-used {
+  margin-left: 100px;
+  padding-top: 5vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.codes-used h1 {
+  font-family: Azonix;
+  font-size: 3vh;
+}
+.footer-codes li {
+  font-family: Consolas;
+  width: 100%;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  align-items: left;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+    visibility: visible;
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slide-down {
+  from {
+    transform: translateY(-100%);
+    visibility: visible;
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+.transition-fade {
+  opacity: 1;
+  transition: 500ms;
+  transform: translateX(0);
+  transform-origin: left;
+}
+
+html.is-animating.transition-fade {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+html.is-animating.transition-fade {
+  opacity: 0;
+}
+
+@keyframes change-color {
+  from {
+    color: white;
+  }
+  to {
+    color: blanchedalmond;
+    transition: 0.5s ease;
+  }
+}
+
+.card1 a,
+.card2 a,
+.card3 a {
+  text-decoration: none;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles/styles.css" rel="stylesheet"/>
+    <link href="./styles/contactstyles.css" rel="stylesheet"/>
+    <script src="./javascript/app.js" rel="javascript"></script>
+    <script src="./javascript/transitions.js" rel="javascript"></script>
+    <script defer src="./node_modules/swup/dist/swup.min.js"></script>
+    <title>CONTACT</title>
+</head>
+<body>
+    <main data-router-wrapper>
+        <section data-router-view="contact">
+            <nav>
+                <div  class="navbar">
+                    <ul class="homeul">
+                        <li ><a  href="./index.html">Home</a></li>
+                        <li><a href="./about.html">ABOUT</a></li>
+                        <li><a href="./work.html">WORK</a></li>
+                        <li><a class ="active" href="./contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="contactcontainer">
+                <h1>SAMYAK SHAH</h1>
+                <h3>You can also contact me at: s4samyak@gmail.com</h3>
+               
+                <div class="contactcard">
+                    <div class="formcont">
+                        <form class="contactdet" action="backend.php">
+                            <div>
+                                <span>NAME : </span> 
+                                <input type="text" name="name" required="required">
+                            </div>
+        
+                            <div>
+                                <span>EMAIL : </span>
+                                <input type="email" name="email" required="required">
+                            </div>
+                            <div>
+                                <span>SUBJECT : </span>
+                                <textarea class="commentbox" required="required"></textarea>
+                            </div>
+        
+                            <div class="inputBox">
+                                <span>COMMENT : </span>
+                                <textarea class="commentbox"type="text" name="comment" ></textarea>
+                            </div>
+        
+                            <div class="contactsub">
+                                 <button class="contactsubmit" action="send" method="post">SUBMIT</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footerall">
+                <div class="container-footer">
+                    <div class="logo">
+                        <h1>TITANIUM ARTS</h1>
+                        <div class="social-media">
+                            <ul class="footer-sm">
+                                <li><a href="https://www.instagram.com/titaniumarts"><img src="./Images/Insta.png" class="insta-logo"></a></li>
+                                <li><a href="#"><img src="./Images/facebook.png" class="facebook-logo"></a></li>
+                                <li><a href="#"><img src="./Images/twitter.png" class="twitter-logo"></a></li>
+                                <li><a href="#"><img src="./Images/linkedin.png" class="linkedin-logo"></a></li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    <div class="codes-used">
+                        <h1 class="codes-used-txt">CODES USED</h1>
+                        <ul class="footer-codes">
+                            <li>&lt;HTML&gt;</li>
+                            <li>&lt;CSS&gt;</li>
+                            <li>&lt;JAVASCRIPT&gt;</li>
+                            <li>&lt;DOGTYPE / HIGHWAY&gt;</li>
+                            <li>&lt;GSAP&gt;</li>
+                            <li><br></li>
+                            <li><br></li>
+                            <li><br></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

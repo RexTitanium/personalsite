@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.imgcard1,
+.imgcard2,
+.imgcard3,
+.imgcard4,
+.imgcard5,
+.imgcard6,
+.imgcard7 {
+  display: flex;
+  flex-direction: row;
+}
+
+.imagecontainer {
+  width: 30%;
+  padding: 50px 50px;
+}
+.imagecontainer img {
+  width: 100%;
+}
+
+.imageheading h1 {
+  font-family: Overpass;
+  font-size: 50px;
+  text-align: center;
+  color: white;
+  padding-top: 50px;
+}
+
+.row {
+  animation: fade-in 3s ease;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 15%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  animation: fade-in 3s ease;
+  opacity: 30%;
+  cursor: pointer;
+
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  border-radius: 5px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 10px black;
+}
+
+.column img:hover {
+  transform: translateY(-5%);
+  opacity: 100%;
+  transition: all 0.6s ease;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0%;
+  }
+  to {
+  }
+}

@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.contactcontainer {
+  height: 700px;
+}
+.contactcard {
+  animation: slide-right 3s ease;
+  width: 75vh;
+  height: 60vh;
+  float: right;
+  background-color: #b5bbe7;
+  box-shadow: 0px 5px 10px black;
+  box-sizing: content-box;
+  border-radius: 8px;
+  margin: 20px;
+  display: flex;
+}
+
+.formcont {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: Consolas;
+  font-size: x-large;
+  text-shadow: 1px 1px 2px #585858;
+  color: black;
+}
+
+span {
+  display: inline-block;
+  clear: left;
+  width: 250px;
+  text-align: left;
+}
+
+input {
+  background-color: black;
+  display: inline-block;
+  color: white;
+}
+textarea {
+  background-color: black;
+  color: white;
+  margin-top: 10px;
+}
+
+.contactsubmit {
+  margin-top: 50px;
+  width: 10rem;
+  padding: 10px 10px;
+  border: none;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+}
+
+.commentbox {
+  resize: none;
+  margin-top: 10px;
+  height: 100px;
+}
+
+.contactcontainer h1 {
+  animation: slide-left 3s ease;
+  margin: 10rem;
+  font-family: consolas;
+  font-size: 10vh;
+  color: white;
+  float: left;
+}
+
+.contactcontainer h3 {
+  animation: change-color 3s ease;
+  margin-left: 20vh;
+  margin-top: 16rem;
+  font-family: consolas;
+  color: blanchedalmond;
+  justify-content: baseline;
+  position: absolute;
+}
+
+@keyframes slide-left {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slide-right {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes change-color {
+  from {
+    color: white;
+  }
+  to {
+    color: blanchedalmond;
+    transition: 0.5s ease;
+  }
+}

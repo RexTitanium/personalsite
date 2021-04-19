@@ -1,0 +1,654 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.contactcontainer {
+  height: 700px;
+}
+.contactcard {
+  animation: slide-right 3s ease;
+  width: 75vh;
+  height: 60vh;
+  float: right;
+  background-color: #b5bbe7;
+  box-shadow: 0px 5px 10px black;
+  box-sizing: content-box;
+  border-radius: 8px;
+  margin: 20px;
+  display: flex;
+}
+
+.formcont {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: Consolas;
+  font-size: x-large;
+  text-shadow: 1px 1px 2px #585858;
+  color: black;
+}
+
+span {
+  display: inline-block;
+  clear: left;
+  width: 250px;
+  text-align: left;
+}
+
+input {
+  background-color: black;
+  display: inline-block;
+  color: white;
+}
+textarea {
+  background-color: black;
+  color: white;
+  margin-top: 10px;
+}
+
+.contactsubmit {
+  margin-top: 50px;
+  width: 10rem;
+  padding: 10px 10px;
+  border: none;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+}
+
+.commentbox {
+  resize: none;
+  margin-top: 10px;
+  height: 100px;
+}
+
+.contactcontainer h1 {
+  animation: slide-left 3s ease;
+  margin: 10rem;
+  font-family: consolas;
+  font-size: 10vh;
+  color: white;
+  float: left;
+}
+
+.contactcontainer h3 {
+  animation: change-color 3s ease;
+  margin-left: 20vh;
+  margin-top: 16rem;
+  font-family: consolas;
+  color: blanchedalmond;
+  justify-content: baseline;
+  position: absolute;
+}
+
+@keyframes slide-left {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slide-right {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes change-color {
+  from {
+    color: white;
+  }
+  to {
+    color: blanchedalmond;
+    transition: 0.5s ease;
+  }
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.aboutme {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+}
+.image-card {
+  cursor: pointer;
+  background-color: black;
+  box-shadow: 0px 5px 10px black;
+  box-sizing: border-box;
+  border-radius: 15px;
+  margin: 20px;
+  display: inline-block;
+  align-items: center;
+}
+
+.photo {
+  animation: zoom-out 2s ease;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.info {
+  font-family: Consolas;
+  font-size: larger;
+  color: white;
+  padding: 20px 0px;
+}
+.info h1 {
+  border-bottom: 2px solid white;
+}
+
+.info p {
+  padding-right: 20px;
+  text-align: left;
+  animation: slide-left 2s ease;
+}
+
+.Curriculum-vitae h1 {
+  opacity: 70%;
+  margin-top: 50px;
+  text-align: center;
+  font-size: 100px;
+  font-family: Azonix;
+  color: bisque;
+  border-bottom: 10px solid bisque;
+}
+
+.mystory h1 {
+  font-family: Consolas;
+  font-size: 50px;
+  color: white;
+  padding: 0px 20px;
+  border-bottom: 2px solid white;
+}
+.mystory p {
+  font-family: Consolas;
+  font-size: 20px;
+  color: white;
+  padding: 20px 20px;
+}
+
+.Curriculum-vitae {
+  align-items: center;
+}
+
+.cv-name {
+  margin-top: 30px;
+  padding: 50px 50px;
+}
+
+.cv-name h2 {
+  font-size: 60px;
+  font-family: adam;
+  color: white;
+  text-align: left;
+}
+
+.headline {
+  margin-top: 20px;
+  color: white;
+  font-family: Overpass;
+  list-style: none;
+  font-size: 30px;
+}
+.headline li a {
+  font-family: Overpass;
+  color: white;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.education,
+.key-acad,
+.skills,
+.additional-info {
+  margin-top: 50px;
+  font-family: Overpass;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.ed-timeline li ul,
+.keyacad-timeline li ul,
+.skills-tl li ul,
+.addinfo-tl li ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+.skills-tl {
+  list-style-type: none;
+}
+.ed-timeline li,
+.keyacad-timeline li,
+.skills-tl li,
+.addinfo-tl li {
+  margin-top: 10px;
+}
+
+.rest {
+  margin-left: 120px;
+}
+
+.rest2 {
+  margin-left: 310px;
+}
+
+.rest1 {
+  margin-left: 0px;
+}
+
+.rest i {
+  color: gray;
+}
+@keyframes slide-left {
+  from {
+    opacity: 0;
+    transform: translateX(-1%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes zoom-out {
+  from {
+    width: 120%;
+    opacity: 0.5;
+  }
+  to {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.imgcard1,
+.imgcard2,
+.imgcard3,
+.imgcard4,
+.imgcard5,
+.imgcard6,
+.imgcard7 {
+  display: flex;
+  flex-direction: row;
+}
+
+.imagecontainer {
+  width: 30%;
+  padding: 50px 50px;
+}
+.imagecontainer img {
+  width: 100%;
+}
+
+.imageheading h1 {
+  font-family: Overpass;
+  font-size: 50px;
+  text-align: center;
+  color: white;
+  padding-top: 50px;
+}
+
+.row {
+  animation: fade-in 3s ease;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 15%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  animation: fade-in 3s ease;
+  opacity: 30%;
+  cursor: pointer;
+
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  border-radius: 5px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 10px black;
+}
+
+.column img:hover {
+  transform: translateY(-5%);
+  opacity: 100%;
+  transition: all 0.6s ease;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0%;
+  }
+  to {
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  background-color: #151515;
+  box-sizing: border-box;
+  height: 15vh;
+  box-shadow: 0px 10px 10px #070707;
+}
+
+.homeul {
+  text-align: center;
+  list-style-type: none;
+}
+.homeul li {
+  margin-top: 40px;
+  display: inline-block;
+}
+.homeul li a {
+  font-size: larger;
+  font-family: Azonix;
+  text-decoration: none;
+  margin: 10px;
+  padding: 10px 5px;
+  color: white;
+  border: none;
+  transition: 0.5s ease;
+  text-shadow: 0px 3px 5px #010101;
+}
+.homeul li a:hover {
+  color: blanchedalmond;
+  transition: 0.1s ease;
+  border-bottom: 3px solid blanchedalmond;
+}
+.homeul li a.active {
+  color: #99a4ff;
+  border-bottom: 3px solid #99a4ff;
+}
+body {
+  background: url("/blackGrad.jpg.fa96da89.png");
+  background-size: cover;
+}
+.container {
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+.title {
+  font-family: Azonix;
+  color: white;
+  text-shadow: 0px 5px 10px #000000;
+  font-size: 10vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: all 0.5s ease;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+}
+.title:hover {
+  font-size: 70px;
+  transition: all 0.2s ease;
+}
+.container img {
+  width: 100%;
+  background: url("/midimg.c56f028e.png");
+  opacity: 50%;
+  display: flex;
+}
+
+.container1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 10px;
+  height: 700px;
+}
+
+.cards {
+  cursor: po;
+  animation: slide-in 0.5s ease forwards;
+  background-color: black;
+  box-shadow: 0px 5px 10px black;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin: 20px;
+  width: 20%;
+  height: fit-content;
+}
+.image img {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  width: 100%;
+}
+
+.card1 h1 {
+  margin-top: 5px;
+  font-size: x-large;
+  text-align: center;
+  font-family: Adam;
+  color: white;
+}
+.card1 h3 {
+  text-align: center;
+  margin: 5px;
+  padding: 5px 5px;
+  font-size: medium;
+  font-family: Consolas;
+  color: white;
+}
+
+.card1:hover {
+  transition: all 0.3s ease;
+  transform: translateY(-20px);
+}
+
+/*card2*/
+.card2 h1 {
+  margin-top: 5px;
+  font-size: x-large;
+  text-align: center;
+  font-family: Adam;
+  color: white;
+}
+.card2 h3 {
+  text-align: center;
+  margin: 5px;
+  padding: 5px 5px;
+  font-size: medium;
+  font-family: Consolas;
+  color: white;
+}
+
+.card2:hover {
+  transition: all 0.3s ease;
+  transform: translateY(-20px);
+}
+
+/*card3*/
+.card3 h1 {
+  margin-top: 5px;
+  font-size: x-large;
+  text-align: center;
+  font-family: Adam;
+  color: white;
+}
+.card3 h3 {
+  text-align: center;
+  margin: 5px;
+  padding: 5px 5px;
+  font-size: medium;
+  font-family: Consolas;
+  color: white;
+}
+
+.card3:hover {
+  transition: all 0.3s ease;
+  transform: translateY(-20px);
+}
+
+.image img:hover {
+  transition: all 0.6s ease;
+  transform: translateY(-10px);
+}
+
+.footerall {
+  background-color: black;
+  color: white;
+  box-shadow: -5px 0px 10px #000000;
+  bottom: 0;
+  width: 100%;
+  position: relative;
+}
+.container-footer {
+  display: flex;
+  flex-direction: row;
+  padding-left: 5vh;
+  list-style: none;
+}
+
+.logo h1 {
+  font-family: Azonix;
+  font-size: 3vh;
+  padding-top: 5vh;
+}
+
+.footer-sm {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: left;
+}
+.insta-logo,
+.facebook-logo,
+.twitter-logo,
+.linkedin-logo {
+  width: 22px;
+  margin: 10px;
+}
+
+.codes-used {
+  margin-left: 100px;
+  padding-top: 5vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.codes-used h1 {
+  font-family: Azonix;
+  font-size: 3vh;
+}
+.footer-codes li {
+  font-family: Consolas;
+  width: 100%;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  align-items: left;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+    visibility: visible;
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slide-down {
+  from {
+    transform: translateY(-100%);
+    visibility: visible;
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+.transition-fade {
+  opacity: 1;
+  transition: 500ms;
+  transform: translateX(0);
+  transform-origin: left;
+}
+
+html.is-animating.transition-fade {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+html.is-animating.transition-fade {
+  opacity: 0;
+}
+
+@keyframes change-color {
+  from {
+    color: white;
+  }
+  to {
+    color: blanchedalmond;
+    transition: 0.5s ease;
+  }
+}
+
+.card1 a,
+.card2 a,
+.card3 a {
+  text-decoration: none;
+}
+
+
+/*# sourceMappingURL=/styles.956d002c.css.map */
