@@ -46,7 +46,7 @@
 
 .column img {
   animation: fade-in 3s ease;
-  opacity: 30%;
+  opacity: 0.3;
   cursor: pointer;
 
   margin-top: 8px;
@@ -59,7 +59,7 @@
 
 .column img:hover {
   transform: translateY(-5%);
-  opacity: 100%;
+  opacity: 1;
   transition: all 0.6s ease;
 }
 
@@ -81,7 +81,7 @@
 
 @keyframes fade-in {
   from {
-    opacity: 0%;
+    opacity: 0;
   }
   to {
   }
