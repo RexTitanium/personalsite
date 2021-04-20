@@ -286,7 +286,7 @@ html.is-animating.transition-fade {
 
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) and (orientation: portrait) {
   .body {
     background-size: cover;
   }
@@ -294,7 +294,11 @@ html.is-animating.transition-fade {
     font-size: 10px;
   }
   .title {
-    font-size: 6vh;
+    font-size: 3vh;
+  }
+  .title:hover {
+    font-size: 95%;
+    transition: all 0.2s ease;
   }
   .container1 {
     align-items: center;
@@ -303,7 +307,6 @@ html.is-animating.transition-fade {
     width: 80%;
     height: 2000px;
     display: grid;
-    grid-column-gap: 20px;
   }
   .cards {
     width: 80%;
@@ -361,11 +364,94 @@ html.is-animating.transition-fade {
   }
 }
 
-@media screen and (max-width: 1920px) {
+@media screen and (max-width: 600px) {
   .homeul li a {
     font-size: 10px;
   }
   .title {
     font-size: 3vh;
+  }
+}
+
+@media screen and (max-width: 800px) and (orientation: landscape) {
+  .body {
+    background-size: cover;
+  }
+  .homeul {
+    text-align: center;
+  }
+  .homeul li {
+    margin-top: 10px;
+  }
+  .homeul li a {
+    margin-top: 10px;
+    font-size: 10px;
+  }
+  .title:hover {
+    font-size: 200%;
+    transition: all 0.2s ease;
+  }
+  .container1 {
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+    width: 80%;
+    height: 2600px;
+    display: grid;
+    grid-column-gap: 20px;
+  }
+  .cards {
+    width: 80%;
+  }
+  .footerall {
+    bottom: 0;
+    position: relative;
+  }
+  .container-footer {
+    display: flex;
+    flex-direction: row;
+    padding-left: 1vh;
+    list-style: none;
+  }
+
+  .logo h1 {
+    font-family: Azonix;
+    font-size: 1vh;
+    padding-top: 2vh;
+  }
+
+  .footer-sm {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: left;
+  }
+  .insta-logo,
+  .facebook-logo,
+  .twitter-logo,
+  .linkedin-logo {
+    width: 11px;
+    margin: 5px;
+  }
+
+  .codes-used {
+    margin-left: 40px;
+    padding-top: 2vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .codes-used h1 {
+    font-family: Azonix;
+    font-size: 1vh;
+  }
+  .footer-codes li {
+    font-family: Consolas;
+    font-size: 0.7vh;
+    width: 100%;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: left;
   }
 }
