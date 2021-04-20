@@ -3,18 +3,18 @@
   padding: 0;
 }
 .contactcontainer {
-  height: 700px;
+  height: fit-content;
+  margin-bottom: 80px;
 }
 .contactcard {
   animation: slide-right 3s ease;
   width: 75vh;
   height: 60vh;
-  float: right;
   background-color: #b5bbe7;
   box-shadow: 0px 5px 10px black;
   box-sizing: content-box;
   border-radius: 8px;
-  margin: 20px;
+  margin-top: 60px;
   display: flex;
 }
 
@@ -116,11 +116,70 @@ textarea {
   }
 }
 
+@media screen and (max-width: 800px) {
+  .heading {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  .contactcontainer {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: fit-content + 1px;
+    margin-left: 40px;
+    margin-top: 10px;
+  }
+  .contactcard {
+    width: 300px;
+    height: 500px;
+    margin-top: 30px;
+  }
+  .contactcontainer h1 {
+    font-size: 100%;
+    margin: 0px;
+  }
+
+  .formcont {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 30px;
+    font-family: Consolas;
+    font-size: 2vh;
+    text-shadow: 1px 1px 2px #585858;
+    color: black;
+  }
+
+  .contactcontainer h3 {
+    font-family: consolas;
+    font-size: 10px;
+    margin-left: 0px;
+    margin-top: 20px;
+    display: flex;
+    animation: change-color 3s ease;
+    color: blanchedalmond;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .homeul li a {
+    font-size: 10px;
+  }
+  .title {
+    font-size: 3vh;
+  }
+}
+
 * {
   margin: 0px;
   padding: 0px;
 }
-
+.html {
+  overflow-x: hidden;
+}
 .aboutme {
   display: flex;
   flex-direction: row;
@@ -277,6 +336,151 @@ textarea {
     width: 100%;
     opacity: 1;
   }
+}
+
+@media screen and (max-width: 800px) {
+  .aboutme {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+  }
+
+  .image-card {
+    cursor: pointer;
+    background-color: black;
+    box-shadow: 0px 5px 10px black;
+    box-sizing: border-box;
+    border-radius: 15px;
+    margin: 20px;
+    display: inline-block;
+    align-items: center;
+  }
+
+  .photo {
+    animation: zoom-out 0.3s ease;
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .info {
+    font-family: Consolas;
+    font-size: larger;
+    color: white;
+    padding: 20px 20px;
+  }
+  .info h1 {
+    border-bottom: 2px solid white;
+  }
+
+  .info p {
+    padding-right: 20px;
+    text-align: left;
+    animation: slide-left 2s ease;
+  }
+
+  .mystory h1 {
+    font-family: Consolas;
+    font-size: 50px;
+    color: white;
+    padding: 0px 20px;
+    border-bottom: 2px solid white;
+  }
+  .mystory p {
+    font-family: Consolas;
+    font-size: 20px;
+    color: white;
+    padding: 20px 20px;
+  }
+
+  .Curriculum-vitae h1 {
+    font-size: 20px;
+    border-bottom: 3px solid bisque;
+  }
+
+  .cv-name {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px 30px;
+  }
+
+  .cv-name h2 {
+    font-size: 15px;
+    font-family: adam;
+    color: white;
+    text-align: left;
+  }
+
+  .headline {
+    margin-top: 10px;
+    color: white;
+    font-family: Overpass;
+    list-style: none;
+    font-size: 13px;
+  }
+  .headline li a {
+    font-family: Overpass;
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+  }
+
+  .education,
+  .key-acad,
+  .skills,
+  .additional-info {
+    margin-top: 50px;
+    font-family: Overpass;
+    color: white;
+    font-size: 13px;
+    text-decoration: none;
+  }
+
+  .education ul,
+  .key-acad ul,
+  .skills ul,
+  .additional-info ul {
+    font-size: 10px;
+  }
+
+  .ed-timeline li ul,
+  .keyacad-timeline li ul,
+  .skills-tl li ul,
+  .addinfo-tl li ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+  }
+  .skills-tl {
+    list-style-type: none;
+  }
+  .ed-timeline li,
+  .keyacad-timeline li,
+  .addinfo-tl li {
+    margin-top: 10px;
+  }
+
+  .skills-tl li ul {
+    gap: 20px;
+  }
+
+  .rest {
+    margin-left: 20px;
+  }
+
+  .rest2 {
+    margin-left: 60px;
+  }
+
+  .rest1 {
+    margin-left: 0px;
+  }
+
+  .rest i {
+    color: gray;
+  }
+}
+
+@media screen and (max-width: 600px) {
 }
 
 * {
@@ -558,7 +762,8 @@ body {
 }
 
 .logo h1 {
-  font-family: Azonix;
+  font-family: "Azonix Regular";
+  src: local("Azonix Regular") url("/Azonix.7be803a1.woff") format("woff");
   font-size: 3vh;
   padding-top: 5vh;
 }
@@ -648,6 +853,176 @@ html.is-animating.transition-fade {
 .card2 a,
 .card3 a {
   text-decoration: none;
+}
+
+@media screen and (max-width: 800px) and (orientation: portrait) {
+  .body {
+    background-size: cover;
+  }
+  .homeul li a {
+    font-size: 10px;
+  }
+  .title {
+    font-size: 3vh;
+  }
+  .title:hover {
+    font-size: 95%;
+    transition: all 0.2s ease;
+  }
+  .container1 {
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+    width: 80%;
+    height: 2000px;
+    display: grid;
+  }
+  .cards {
+    width: 80%;
+  }
+  .footerall {
+    bottom: 0;
+    position: relative;
+  }
+  .container-footer {
+    display: flex;
+    flex-direction: row;
+    padding-left: 1vh;
+    list-style: none;
+  }
+
+  .logo h1 {
+    font-family: Azonix;
+    font-size: 1vh;
+    padding-top: 2vh;
+  }
+
+  .footer-sm {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: left;
+  }
+  .insta-logo,
+  .facebook-logo,
+  .twitter-logo,
+  .linkedin-logo {
+    width: 11px;
+    margin: 5px;
+  }
+
+  .codes-used {
+    margin-left: 40px;
+    padding-top: 2vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .codes-used h1 {
+    font-family: Azonix;
+    font-size: 1vh;
+  }
+  .footer-codes li {
+    font-family: Consolas;
+    font-size: 0.7vh;
+    width: 100%;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: left;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .homeul li a {
+    font-size: 10px;
+  }
+  .title {
+    font-size: 3vh;
+  }
+}
+
+@media screen and (max-width: 800px) and (orientation: landscape) {
+  .body {
+    background-size: cover;
+  }
+  .homeul {
+    text-align: center;
+  }
+  .homeul li {
+    margin-top: 10px;
+  }
+  .homeul li a {
+    margin-top: 10px;
+    font-size: 10px;
+  }
+  .title:hover {
+    font-size: 200%;
+    transition: all 0.2s ease;
+  }
+  .container1 {
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+    width: 80%;
+    height: 2600px;
+    display: grid;
+    grid-column-gap: 20px;
+  }
+  .cards {
+    width: 80%;
+  }
+  .footerall {
+    bottom: 0;
+    position: relative;
+  }
+  .container-footer {
+    display: flex;
+    flex-direction: row;
+    padding-left: 1vh;
+    list-style: none;
+  }
+
+  .logo h1 {
+    font-family: Azonix;
+    font-size: 1vh;
+    padding-top: 2vh;
+  }
+
+  .footer-sm {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: left;
+  }
+  .insta-logo,
+  .facebook-logo,
+  .twitter-logo,
+  .linkedin-logo {
+    width: 11px;
+    margin: 5px;
+  }
+
+  .codes-used {
+    margin-left: 40px;
+    padding-top: 2vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .codes-used h1 {
+    font-family: Azonix;
+    font-size: 1vh;
+  }
+  .footer-codes li {
+    font-family: Consolas;
+    font-size: 0.7vh;
+    width: 100%;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: left;
+  }
 }
 
 

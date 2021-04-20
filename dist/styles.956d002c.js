@@ -204,7 +204,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./contactstyles.css":"styles/contactstyles.css","./aboutstyles.css":"styles/aboutstyles.css","./workstyles.css":"styles/workstyles.css","./..\\Images\\blackGrad.jpg.png":[["blackGrad.jpg.fa96da89.png","Images/blackGrad.jpg.png"],"Images/blackGrad.jpg.png"],"./..\\Images\\midimg.png":[["midimg.c56f028e.png","Images/midimg.png"],"Images/midimg.png"],"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./contactstyles.css":"styles/contactstyles.css","./aboutstyles.css":"styles/aboutstyles.css","./workstyles.css":"styles/workstyles.css","./..\\Images\\blackGrad.jpg.png":[["blackGrad.jpg.fa96da89.png","Images/blackGrad.jpg.png"],"Images/blackGrad.jpg.png"],"./..\\Images\\midimg.png":[["midimg.c56f028e.png","Images/midimg.png"],"Images/midimg.png"],"./..\\Fonts\\Azonix.woff":[["Azonix.7be803a1.woff","Fonts/Azonix.woff"],"Fonts/Azonix.woff"],"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -232,7 +232,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51701" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51425" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

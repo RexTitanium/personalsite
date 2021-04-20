@@ -5,21 +5,22 @@
   "dependencies": {
     "@barba/core": "^2.9.7",
     "@dogstudio/highway": "^2.2.2",
-    "aos": "^2.3.4",
     "bootstrap": "^4.6.0",
     "gsap": "^3.6.1",
     "highway": "0.0.5",
     "react": "^17.0.2",
-    "react-animate-on-scroll": "^2.1.5",
-    "swup": "^2.0.14"
+    "react-animate-on-scroll": "^2.1.5"
   },
   "devDependencies": {
+    "@swup/js-plugin": "^1.0.4",
+    "aos": "^3.0.0-beta.6",
     "barba.js": "^1.0.0",
     "parcel-bundler": "^1.12.5",
-    "sass": "^1.32.8"
+    "sass": "^1.32.8",
+    "swup": "^2.0.14"
   },
   "scripts": {
-    "build":"parcel build index.html",
+    "build": "parcel build index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

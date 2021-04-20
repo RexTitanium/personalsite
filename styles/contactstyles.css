@@ -3,18 +3,18 @@
   padding: 0;
 }
 .contactcontainer {
-  height: 700px;
+  height: fit-content;
+  margin-bottom: 80px;
 }
 .contactcard {
   animation: slide-right 3s ease;
   width: 75vh;
   height: 60vh;
-  float: right;
   background-color: #b5bbe7;
   box-shadow: 0px 5px 10px black;
   box-sizing: content-box;
   border-radius: 8px;
-  margin: 20px;
+  margin-top: 60px;
   display: flex;
 }
 
@@ -113,5 +113,62 @@ textarea {
   to {
     color: blanchedalmond;
     transition: 0.5s ease;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .heading {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  .contactcontainer {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: fit-content + 1px;
+    margin-left: 40px;
+    margin-top: 10px;
+  }
+  .contactcard {
+    width: 300px;
+    height: 500px;
+    margin-top: 30px;
+  }
+  .contactcontainer h1 {
+    font-size: 100%;
+    margin: 0px;
+  }
+
+  .formcont {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 30px;
+    font-family: Consolas;
+    font-size: 2vh;
+    text-shadow: 1px 1px 2px #585858;
+    color: black;
+  }
+
+  .contactcontainer h3 {
+    font-family: consolas;
+    font-size: 10px;
+    margin-left: 0px;
+    margin-top: 20px;
+    display: flex;
+    animation: change-color 3s ease;
+    color: blanchedalmond;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .homeul li a {
+    font-size: 10px;
+  }
+  .title {
+    font-size: 3vh;
   }
 }
