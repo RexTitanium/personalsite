@@ -199,6 +199,10 @@
             delay: 300,
             duration: 800,
             easing: 'ease',
+            disable: function() {
+                var maxWidth = 800;
+                return window.innerWidth < maxWidth;
+              }
         });
     </script>
 </body>
