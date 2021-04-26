@@ -42,7 +42,7 @@
 }
 
 .Curriculum-vitae h1 {
-  opacity: 70%;
+  opacity: 0.7;
   margin-top: 50px;
   text-align: center;
   font-size: 100px;
@@ -159,4 +159,148 @@
     width: 100%;
     opacity: 1;
   }
+}
+
+@media screen and (max-width: 800px) {
+  .aboutme {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+  }
+
+  .image-card {
+    cursor: pointer;
+    background-color: black;
+    box-shadow: 0px 5px 10px black;
+    box-sizing: border-box;
+    border-radius: 15px;
+    margin: 20px;
+    display: inline-block;
+    align-items: center;
+  }
+
+  .photo {
+    animation: zoom-out 0.3s ease;
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .info {
+    font-family: Consolas;
+    font-size: larger;
+    color: white;
+    padding: 20px 20px;
+  }
+  .info h1 {
+    border-bottom: 2px solid white;
+  }
+
+  .info p {
+    padding-right: 20px;
+    text-align: left;
+    animation: slide-left 2s ease;
+  }
+
+  .mystory h1 {
+    font-family: Consolas;
+    font-size: 50px;
+    color: white;
+    padding: 0px 20px;
+    border-bottom: 2px solid white;
+  }
+  .mystory p {
+    font-family: Consolas;
+    font-size: 20px;
+    color: white;
+    padding: 20px 20px;
+  }
+
+  .Curriculum-vitae h1 {
+    font-size: 20px;
+    border-bottom: 3px solid bisque;
+  }
+
+  .cv-name {
+    margin-top: 10px;
+    padding: 10px 30px;
+  }
+
+  .cv-name h2 {
+    font-size: 15px;
+    font-family: adam;
+    color: white;
+    text-align: left;
+  }
+
+  .headline {
+    margin-top: 10px;
+    color: white;
+    font-family: Overpass;
+    list-style: none;
+    font-size: 13px;
+  }
+  .headline li a {
+    font-family: Overpass;
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+  }
+
+  .education,
+  .key-acad,
+  .skills,
+  .additional-info {
+    margin-top: 50px;
+    font-family: Overpass;
+    color: white;
+    font-size: 13px;
+    text-decoration: none;
+  }
+
+  .education ul,
+  .key-acad ul,
+  .skills ul,
+  .additional-info ul {
+    font-size: 10px;
+  }
+
+  .ed-timeline li ul,
+  .keyacad-timeline li ul,
+  .skills-tl li ul,
+  .addinfo-tl li ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+  }
+  .skills-tl {
+    list-style-type: none;
+  }
+  .ed-timeline li,
+  .keyacad-timeline li,
+  .addinfo-tl li {
+    margin-top: 10px;
+  }
+
+  .skills-tl li ul {
+    gap: 20px;
+  }
+
+  .rest {
+    margin-left: 20px;
+  }
+
+  .rest2 {
+    margin-left: 60px;
+  }
+
+  .rest1 {
+    margin-left: 0px;
+  }
+
+  .rest i {
+    color: gray;
+  }
+}
+
+@media screen and (max-width: 600px) {
 }

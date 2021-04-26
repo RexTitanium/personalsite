@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./styles/styles.css" rel="stylesheet"/>
     <link href="./styles/aboutstyles.css" rel="stylesheet"/>
@@ -127,24 +128,23 @@
 
 
                     <div class="additional-info">
-                        <h3 data-aos="fade-right">TECHNICAL SKILLS</h3>
-                        <ul class="addinfo-tl">
+                        <h3 data-aos="fade-right" >ADDITIONAL INFO</h3>
+                        <ul class="addinfo-tl" data-aos="fade-left" data-aos-anchor="skills-tl">
                             <li>
-                                <ul data-aos="fade-left">
+                                <ul>
                                     <li>
-                                            <ul data-aos="fade-left">
+                                            <ul>
                                                 <li>2021 - Present</li>
                                                 <li class="rest"><b>Extracurricular Interests: </b>Digital Arts, Robotics, Football, Singing, Dancing</li>
-                                                <li></li>
                                             </ul>
                                         
-                                    </li><br>
+                                    </li>
                                 </ul>
                                     
-                            </li><br>
+                            </li>
 
                                
-                        </ul><br>
+                        </ul>
                     
                     </div>
 
@@ -179,6 +179,9 @@
                             <li>&lt;HTML&gt;</li>
                             <li>&lt;CSS&gt;</li>
                             <li>&lt;JAVASCRIPT&gt;</li>
+                            <li>&lt;HTML&gt;</li>
+                            <li>&lt;NODE&gt;</li>
+                            <li>&lt;AOS&gt;</li>
                             <li>&lt;DOGTYPE / HIGHWAY&gt;</li>
                             <li>&lt;GSAP&gt;</li>
                             <li><br></li>
@@ -199,6 +202,10 @@
             delay: 300,
             duration: 800,
             easing: 'ease',
+            disable: function() {
+                var maxWidth = 800;
+                return window.innerWidth < maxWidth;
+              }
         });
     </script>
 </body>
