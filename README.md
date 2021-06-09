@@ -1,2 +1,3 @@
 You can check the website at:
-titaniumarts.netlify.app
+
+https://titaniumarts.netlify.app
